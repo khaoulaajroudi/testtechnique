@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { current, logout } from "../../JS/Actions/Users";
 import "./Header.css";
 
-function Header({setsearch}) {
+function Header({ setsearch }) {
   // const isAuth = localStorage.getItem("token");
   // const dispatch = useDispatch();
   // useEffect(() => {
@@ -11,13 +12,16 @@ function Header({setsearch}) {
   //     dispatch(current());
   //   }
   // }, []);
-  const users = useSelector((state) => state.userReducer.user);
-  
+  // const users = useSelector((state) => state.userReducer.user);
+
   return (
     <div>
       <div className="header">
-        <img src="logo.png" className="logo"></img>
-        <nav class="navbar"></nav>
+        <Link to="/lists">
+          {" "}
+          <img src="logo.png" className="logo"></img>
+        </Link>
+        {/* <nav class="navbar">{users.name} {users.lastname}</nav> */}
         <div class="search__container">
           <input
             class="search__input"

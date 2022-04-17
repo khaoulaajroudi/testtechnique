@@ -8,6 +8,13 @@ import "./ContactList.css";
 import Details from "../Détails/Details";
 
 function ComtactList() {
+  const dispatch = useDispatch();
+  // const isAuth = localStorage.getItem("token");
+  // useEffect(() => {
+  //   if (isAuth) {
+  //     dispatch(current());
+  //   }
+  // }, []);
   const users = useSelector((state) => state.userReducer.user);
   return (
     <div className="listcont">

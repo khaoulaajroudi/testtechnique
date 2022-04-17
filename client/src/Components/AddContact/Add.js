@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { addcontact } from "../../JS/Actions/Contact";
 import "./Add.css";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router";
+import { current, logout } from "../../JS/Actions/Users";
 
 function Add() {
-  
+  const navigate = useNavigate();
   const [add, setadd] = useState(0);
   const dispatch = useDispatch();
   const [NewContact, setNewContact] = useState({
@@ -17,6 +19,7 @@ function Add() {
     status: "",
     adress: "",
   });
+
   const handleaddcontact = () => {
     dispatch(addcontact(NewContact));
     toast("new course add");

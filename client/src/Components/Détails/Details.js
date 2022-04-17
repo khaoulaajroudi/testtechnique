@@ -8,6 +8,7 @@ import Lists from "../Lists/Lists";
 import { useDispatch, useSelector } from "react-redux";
 import { deletecontact, getcontact } from "../../JS/Actions/Contact";
 import { editcontact } from "../../JS/Actions/Contact";
+import { current, logout } from "../../JS/Actions/Users";
 
 function Details() {
   const params = useParams();
@@ -20,6 +21,13 @@ function Details() {
     dispatch(getcontact());
   }, []);
   const contacts = useSelector((state) => state.contactReducer.contactList);
+  // const isAuth = localStorage.getItem("token");
+  // useEffect(() => {
+  //   if (isAuth) {
+  //     dispatch(current());
+  //   }
+  // }, []);
+  // const users = useSelector((state) => state.userReducer.user);
   return (
     <div>
       <div className="listcont">
@@ -28,7 +36,6 @@ function Details() {
         <div className="grandbox">
           <div className="boxleft">
             <div className="boxlarge">
-              <Header />
               <ul class="responsive-table">
                 <li class="table-row">
                   <div class="col col-1" data-label="Job Id">
