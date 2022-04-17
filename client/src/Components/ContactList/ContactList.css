@@ -1,0 +1,22 @@
+.listcont {
+  background: #fff !important;
+}
+
+.grandbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+  background: #fff;
+}
+
+.boxleft {
+  width: 40%;
+  height: 600px;
+  border: 1px solid #f27f9c;
+}
+.boxreight {
+  width: 50%;
+  height: 600px;
+}

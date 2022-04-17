@@ -1,0 +1,119 @@
+.principal {
+  width: 100%;
+  overflow: auto;
+  margin-top: 150px;
+  margin-left: 450px;
+  background: #fff !important;
+}
+
+.contcentre {
+  position: relative;
+  width: 500px;
+}
+.selected {
+  width: 110px;
+  margin-top: 10px;
+  padding: 11px 11px;
+  background-color: #fff;
+  box-shadow: 1px 5px 10px -5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+.conttop {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 60px;
+  margin-top: 20px;
+  box-shadow: 1px 15px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.conttitu > h3 {
+  text-align: left;
+  margin-left: 25px;
+  letter-spacing: 7px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 23px;
+}
+
+.conttitu {
+  position: relative;
+  float: left;
+  width: 430px;
+  height: 60px;
+  background: #fff;
+  background: -moz-linear-gradient(left, #2e9d8a 0%, #f6927b 100%);
+  background: -webkit-linear-gradient(left, #2e9d8a 100%, #f6927b 100%);
+  background: linear-gradient(to right, #2e9d8a 1000%, #f6927b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a486b', endColorstr='#507aa7',GradientType=1 );
+  font-family: "Open Sans", sans-serif;
+}
+
+.conttituadd {
+  position: relative;
+  float: left;
+  width: 70px;
+  height: 60px;
+  background: #fff;
+  background: -moz-linear-gradient(left, #2e9d8a 0%, #f6927b 100%);
+  background: -webkit-linear-gradient(right, #2e9d8a 100%, #f6927b 100%);
+  background: linear-gradient(to left, #2e9d8a 100%, #f6927b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a486b', endColorstr='#507aa7',GradientType=1 );
+}
+
+.conttituadd a {
+  display: block;
+  color: #fff;
+  background: #2e9d8a;
+  font-size: 32px;
+  margin-top: 7px;
+  margin-left: 23px;
+}
+
+.table th {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #607d8b;
+}
+
+.table td {
+  width: 33.33%;
+}
+.table td select {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #fff;
+  box-shadow: 1px 5px 10px -5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.table td input {
+  width: 93%;
+  padding: 10px 2%;
+  background-color: #fff;
+  border: none;
+  box-shadow: 1px 5px 10px -5px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  outline: none;
+}
+
+.btn_add_fin {
+  width: 100px !important;
+  position: relative !important;
+  padding: 10px 20px !important;
+  background-color: #4c75a1;
+  border: none !important;
+  box-shadow: 1px 5px 10px -5px rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  margin-left: 177px;
+}
+
+.titledescription {
+  padding-top: 10px;
+  text-align: left;
+  margin-left: 6%;
+  position: relative;
+  float: left;
+}
